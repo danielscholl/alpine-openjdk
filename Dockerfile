@@ -26,7 +26,7 @@ RUN apk add --update \
 
 # Application Insights Agent
 RUN mkdir -p /opt/agents \
-  && curl https://github.com/microsoft/ApplicationInsights-Java/releases/download/${AGENT_VERSION/applicationinsights-agent-${AGENT_VERSION}.jar \
+  && curl https://github.com/microsoft/ApplicationInsights-Java/releases/download/${AGENT_VERSION}/applicationinsights-agent-${AGENT_VERSION}.jar \
   -o /opt/agents/applicationinsights-agent-${AGENT_VERSION}.jar \
   && chmod 444 /opt/agents/applicationinsights-agent-${AGENT_VERSION}.jar
 

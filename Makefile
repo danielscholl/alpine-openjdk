@@ -20,7 +20,7 @@ GIT_BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
 GIT_REPOSITORY_NAME := $(shell git config --get remote.origin.url | cut -d'/' -f5 | cut -d'.' -f1)
 GIT_ACCOUNT_NAME := $(shell git config --get remote.origin.url | cut -d'/' -f4)
 GIT_SHA := $(shell git log --pretty=format:'%H' -n 1)
-GIT_TAG ?= $(shell git describe --always --tags | awk -F "-" '{print $$1}')
+GIT_TAG ?= $(shell git describe --always --tags | awk -F "-" '{print $1}')
 GIT_TAG_END ?= HEAD
 GIT_VERSION := $(shell git describe --always --tags --long --dirty | sed -e 's/\-0//' -e 's/\-g.......//')
 GIT_VERSION_LONG := $(shell git describe --always --tags --long --dirty)
@@ -38,8 +38,8 @@ DOCKER_IMAGE_NAME := $(GIT_REPOSITORY_NAME)
 # Terraform Varibles
 # -----------------------------------------------------------------------------
 
-JDK_VERSION ?= 0.14.5
-AGENT_VERSION ?= 2.16.0
+JDK_VERSION ?= 8.252.09-r0
+AGENT_VERSION ?= 3.0.2
 
 # -----------------------------------------------------------------------------
 # FUNCTIONS
