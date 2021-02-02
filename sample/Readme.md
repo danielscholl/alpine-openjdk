@@ -9,5 +9,5 @@ docker-compose up
 ## Test Container with App Inights Agent
 
 ```
-AGENT_VERSION=3.1.2 docker-compose up
+AGENT_VERSION=applicationinsights-agent-3.0.2.jar docker-compose up
 ```
