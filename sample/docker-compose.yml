@@ -1,0 +1,9 @@
+version: '3'
+services:
+  sample:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sample-app
+    environment:
+      AGENT_VERSION: 3.0.2

@@ -1,11 +1,9 @@
 #!/bin/sh
 
 OPTIONS=""
-sep=""
 
-if [ -n $AGENT_JAR ]; then
-  OPTIONS="${OPTIONS}${sep}-javaagent:/opt/agents/${AGENT_JAR}"
-  sep="="
+if [ ! -z $AGENT_VERSION ]; then
+  OPTIONS="${OPTIONS}-javaagent:/opt/agents/${AGENT_VERSION}"
 fi
 
 echo ${OPTIONS}
