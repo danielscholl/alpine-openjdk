@@ -1,4 +1,4 @@
-FROM alpine-openjdk:latest
+FROM danielscholl/alpine-openjdk:latest
 
 WORKDIR /deployments
 
