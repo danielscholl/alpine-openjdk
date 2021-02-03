@@ -15,8 +15,9 @@ RUN mkdir -p /deployments
 
 # JAVA_APP_DIR is used by run-java.sh for finding the binaries
 ENV JAVA_APP_DIR=/deployments \
-  JAVA_MAJOR_VERSION=8
-
+  JAVA_MAJOR_VERSION=8 \
+  AGENT_VERSION=${AGENT_VERSION} \
+  APPLICATIONINSIGHTS_CONNECTION_STRING=""
 
 RUN apk add --update \
   curl \

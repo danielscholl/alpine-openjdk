@@ -5,5 +5,5 @@ services:
       context: .
       dockerfile: Dockerfile
     image: sample-app
-    environment:
-      AGENT_VERSION: ${AGENT_VERSION}
+    # environment:
+    #   APPLICATIONINSIGHTS_CONNECTION_STRING: "InstrumentationKey=**********"
