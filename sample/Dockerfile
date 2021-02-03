@@ -1,7 +1,5 @@
-FROM danielscholl/alpine-openjdk:latest
+FROM alpine-openjdk:latest
 
 WORKDIR /deployments
 
-# ENV AGENT_VERSION=3.0.2
-
-COPY spring-boot-camel-1.0-SNAPSHOT.jar app.jar
+COPY spring-petclinic-2.4.2.jar app.jar
