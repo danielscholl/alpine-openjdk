@@ -1,5 +1,7 @@
 ## Alpine Java Base Image
 
+![Docker Build and Push](https://github.com/danielscholl/alpine-openjdk/workflows/Docker%20Build%20and%20Push/badge.svg)
+
 This is a repository for Java Docker base images used in osdu projects.
 
 
