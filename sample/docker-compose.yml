@@ -5,5 +5,5 @@ services:
       context: .
       dockerfile: Dockerfile
     image: sample-app
-    environment:
-      APPLICATIONINSIGHTS_CONNECTION_STRING: ""
+    # environment:
+    #   APPLICATIONINSIGHTS_CONNECTION_STRING: ""
