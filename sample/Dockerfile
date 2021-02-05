@@ -1,4 +1,4 @@
-FROM danielscholl/alpine-openjdk:latest
+FROM alpine-openjdk:0.0.1-9-dirty
 
 WORKDIR /deployments
 
